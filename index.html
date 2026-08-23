@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayush Rawat - Computer Engineering Student & Full-Stack Web Developer. Crafting reliable, high-performance web applications and software solutions.">
+    <meta name="author" content="Ayush Rawat">
+    <title>Ayush Rawat | Computer Engineering Student & Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+    <!-- =========================================================================
+         Header & Navigation Bar
+         ========================================================================= -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand" aria-label="Ayush Rawat Homepage">
+                <div class="brand-logo">AR</div>
+                <div class="brand-name">Ayush<span>Rawat</span></div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="status-pill" title="Current Status">
+                    <span class="pulse-dot"></span>
+                    <span>Open to Opportunities</span>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =====================================================================
+             Hero Section
+             ===================================================================== -->
+        <section class="section hero" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content reveal">
+                        <div class="hero-badge-wrap">
+                            <span class="section-tag">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                Computer Engineering Student & Developer
+                            </span>
+                        </div>
+                        <h1 class="hero-title">
+                            Engineering <span class="highlight-text">Trustworthy</span> & Scalable Digital Experiences.
+                        </h1>
+                        <p class="hero-desc">
+                            Hi, I'm <strong>Ayush Rawat</strong>, a Computer Engineering student at <strong>Thapar Institute of Engineering and Technology</strong>. I blend foundational computer science principles with modern full-stack web development to build clean, reliable, and user-centric software.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary btn-lg">
+                                <span>Explore Projects</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary btn-lg">
+                                <span>Contact Me</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>10<span>+</span></h3>
+                                <p>Projects Built</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>B.Tech</h3>
+                                <p>Computer Engineering</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100<span>%</span></h3>
+                                <p>Responsive Code</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal">
+                        <div class="code-card">
+                            <div class="card-header">
+                                <div class="window-dots">
+                                    <div class="dot dot-red"></div>
+                                    <div class="dot dot-yellow"></div>
+                                    <div class="dot dot-green"></div>
+                                </div>
+                                <div class="card-filename">developer_profile.js</div>
+                                <div class="card-badge">ES6+</div>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                                <div class="code-line code-indent"><span class="code-prop">name</span>: <span class="code-str">'Ayush Rawat'</span>,</div>
+                                <div class="code-line code-indent"><span class="code-prop">role</span>: <span class="code-str">'Computer Engineering Student'</span>,</div>
+                                <div class="code-line code-indent"><span class="code-prop">institution</span>: <span class="code-str">'Thapar Institute of Eng. & Tech.'</span>,</div>
+                                <div class="code-line code-indent"><span class="code-prop">location</span>: <span class="code-str">'Dehradun, Uttarakhand, India'</span>,</div>
+                                <div class="code-line code-indent"><span class="code-prop">coreSkills</span>: [</div>
+                                <div class="code-line code-indent" style="padding-left: 2.5rem;"><span class="code-str">'JavaScript'</span>, <span class="code-str">'Node.js'</span>, <span class="code-str">'HTML5/CSS3'</span>,</div>
+                                <div class="code-line code-indent" style="padding-left: 2.5rem;"><span class="code-str">'Express'</span>, <span class="code-str">'Problem Solving'</span>, <span class="code-str">'Git'</span></div>
+                                <div class="code-line code-indent">],</div>
+                                <div class="code-line code-indent"><span class="code-prop">values</span>: [<span class="code-str">'Clean Architecture'</span>, <span class="code-str">'Trust & Quality'</span>],</div>
+                                <div class="code-line code-indent"><span class="code-prop">openForWork</span>: <span class="code-keyword">true</span></div>
+                                <div class="code-line">};</div>
+                                <div class="code-line"><span class="code-comment">// Ready to create impactful solutions</span></div>
+                            </div>
+                        </div>
+                        <div class="floating-badge">
+                            <div class="badge-icon">✓</div>
+                            <div class="badge-text">
+                                <div class="title">Engineering Rigor</div>
+                                <div class="subtitle">Thapar Institute of Eng. & Tech.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             About & Core Values Section
+             ===================================================================== -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Driven by Curiosity, <span>Grounded in Engineering</span></h2>
+                    <p class="section-subtitle">A balanced approach to software design, blending continuous academic learning with hands-on project craftsmanship.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            I am a first-year <strong>Computer Engineering student</strong> at <strong>Thapar Institute of Engineering and Technology</strong> (2026–2030) with a profound enthusiasm for building robust software applications. My journey started with a strong curiosity for how systems operate, which quickly grew into hands-on web development, algorithmic problem-solving, and building practical tools.
+                        </p>
+                        <p>
+                            Hailing from <strong>Dehradun, Uttarakhand</strong> and an alumnus of <strong>Doon International School</strong>, I believe software engineering is at its best when it prioritizes <strong>user trust, clean code standards, and seamless responsiveness</strong>.
+                        </p>
+                        <p>
+                            Beyond programming and coursework, I am an active sports enthusiast (especially cricket), a passionate guitar learner, and a gamer. These hobbies keep my mind creative, focused, and adaptable.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-box">
+                                <div class="highlight-icon">💻</div>
+                                <h4>Full-Stack Foundation</h4>
+                                <p>Experience spanning HTML5, CSS3, modern JavaScript, and Node.js/Express backends.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <div class="highlight-icon">🎯</div>
+                                <h4>Engineering Rigor</h4>
+                                <p>Strong focus on problem solving, data structures, clean architecture, and modular code.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-values reveal">
+                        <div class="values-card">
+                            <h3>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                <span>Core Engineering Principles</span>
+                            </h3>
+                            <div class="values-list">
+                                <div class="value-item">
+                                    <div class="value-num">01</div>
+                                    <div class="value-content">
+                                        <h4>Trust & Reliability</h4>
+                                        <p>Writing resilient code with zero shortcuts, thorough testing, and robust error handling.</p>
+                                    </div>
+                                </div>
+                                <div class="value-item">
+                                    <div class="value-num">02</div>
+                                    <div class="value-content">
+                                        <h4>Clean & Semantic Structure</h4>
+                                        <p>Adhering to modern web standards, semantic HTML, modular CSS, and readable JavaScript.</p>
+                                    </div>
+                                </div>
+                                <div class="value-item">
+                                    <div class="value-num">03</div>
+                                    <div class="value-content">
+                                        <h4>Continuous Evolution</h4>
+                                        <p>Embracing emerging technologies, modern developer tools, and constructive peer collaboration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             Technical Arsenal / Skills Section
+             ===================================================================== -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Technical Arsenal</span>
+                    <h2 class="section-title">Skills & <span>Technologies</span></h2>
+                    <p class="section-subtitle">A comprehensive toolkit spanning client-side interfaces, server-side logic, and computer engineering foundations.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Card -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Frontend & UI</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path></svg>
+                                HTML5 / Semantic Web
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M4 20L20 4"></path></svg>
+                                CSS3 & Modern Styling
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                                CSS Grid & Flexbox
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                Responsive Web Design
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                JavaScript (ES6+)
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path></svg>
+                                DOM Manipulation & Events
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                                Bootstrap 5
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Tools Card -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                            </div>
+                            <h3>Backend & Tools</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                                Node.js Runtime
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                                Express.js Server
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                REST APIs & Routing
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                                Postman API Testing
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                Git & GitHub
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                                NPM Package Manager
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Engineering Fundamentals Card -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </div>
+                            <h3>Core Engineering</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                Problem Solving
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                Computer Engineering Core
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Algorithmic Logic
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                Web Security Basics
+                            </div>
+                            <div class="skill-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                Performance Optimization
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             Featured Projects Section
+             ===================================================================== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio Showcase</span>
+                    <h2 class="section-title">Featured <span>Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications demonstrating design precision, algorithmic logic, responsive layouts, and backend capabilities.</p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="js">Interactive JavaScript</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+                    <button class="filter-btn" data-filter="backend">Backend & Node</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Simon Game -->
+                    <div class="project-card reveal" data-category="js frontend">
+                        <div class="project-preview">
+                            <div class="preview-mockup">
+                                <div class="preview-bar">
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                </div>
+                                <div class="preview-body">
+                                    <div>
+                                        <div class="preview-tag-icon">🎮</div>
+                                        <h4>Simon Game Challenge</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript ES6</span>
+                                <span class="project-tag">jQuery</span>
+                                <span class="project-tag">Web Audio API</span>
+                                <span class="project-tag">Game Logic</span>
+                            </div>
+                            <h3 class="project-title">Simon Memory Game Engine</h3>
+                            <p class="project-desc">
+                                An interactive memory game simulating progressive sound and visual sequences. Features state management, keypress listeners, animated user feedback, and audio synthesis triggers.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="../Simon Game Challenge Completed/index.html" target="_blank" class="project-link-btn" title="Open Project">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                                <a href="https://github.com/rawatayush62" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: TinDog Startup -->
+                    <div class="project-card reveal" data-category="frontend">
+                        <div class="project-preview">
+                            <div class="preview-mockup">
+                                <div class="preview-bar">
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                </div>
+                                <div class="preview-body">
+                                    <div>
+                                        <div class="preview-tag-icon">🐶</div>
+                                        <h4>TinDog Platform</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tags">
+                                <span class="project-tag">Bootstrap 5</span>
+                                <span class="project-tag">CSS Flexbox</span>
+                                <span class="project-tag">Responsive UI</span>
+                                <span class="project-tag">Landing Page</span>
+                            </div>
+                            <h3 class="project-title">TinDog Startup Landing Page</h3>
+                            <p class="project-desc">
+                                A conversion-focused, modern responsive landing page for a canine matchmaking startup. Features carousels, pricing comparison cards, responsive navigation, and smooth mobile scaling.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="../11.3 TinDog Project/index.html" target="_blank" class="project-link-btn" title="Open Project">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                                <a href="https://github.com/rawatayush62" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Dicee Game -->
+                    <div class="project-card reveal" data-category="js frontend">
+                        <div class="project-preview">
+                            <div class="preview-mockup">
+                                <div class="preview-bar">
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                </div>
+                                <div class="preview-body">
+                                    <div>
+                                        <div class="preview-tag-icon">🎲</div>
+                                        <h4>Dicee Game</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">DOM Manipulation</span>
+                                <span class="project-tag">Game Logic</span>
+                            </div>
+                            <h3 class="project-title">2-Player Dicee Game</h3>
+                            <p class="project-desc">
+                                A dynamic two-player interactive game leveraging pseudo-random algorithms and real-time DOM element manipulation to determine victory conditions instantly.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="../Dicee Challenge/dicee.html" target="_blank" class="project-link-btn" title="Open Project">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                                <a href="https://github.com/rawatayush62" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: QR Engine & Node Backend -->
+                    <div class="project-card reveal" data-category="backend">
+                        <div class="project-preview">
+                            <div class="preview-mockup">
+                                <div class="preview-bar">
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                </div>
+                                <div class="preview-body">
+                                    <div>
+                                        <div class="preview-tag-icon">⚡</div>
+                                        <h4>Node.js Backend & CLI Tools</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Express.js</span>
+                                <span class="project-tag">File Streams</span>
+                                <span class="project-tag">CLI / NPM</span>
+                            </div>
+                            <h3 class="project-title">Node.js QR Code Generator & Express Server</h3>
+                            <p class="project-desc">
+                                Command-line utility and server-side tools utilizing Node native modules and NPM packages to encode URLs into downloadable QR code image streams and serve HTTP responses.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <span class="project-tag" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald);">Backend Utility</span>
+                                </div>
+                                <a href="https://github.com/rawatayush62" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Web Design Agency & Mondrian -->
+                    <div class="project-card reveal" data-category="frontend">
+                        <div class="project-preview">
+                            <div class="preview-mockup">
+                                <div class="preview-bar">
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                    <div class="preview-dot"></div>
+                                </div>
+                                <div class="preview-body">
+                                    <div>
+                                        <div class="preview-tag-icon">🎨</div>
+                                        <h4>Modern CSS Grid Mastery</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-tags">
+                                <span class="project-tag">CSS Grid</span>
+                                <span class="project-tag">Flexbox</span>
+                                <span class="project-tag">Layout Engineering</span>
+                            </div>
+                            <h3 class="project-title">Web Design Agency & Mondrian Art Layouts</h3>
+                            <p class="project-desc">
+                                High-precision CSS layout implementations exploring complex 2D CSS Grid placement, dynamic media queries, and Piet Mondrian algorithmic block rendering.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-links">
+                                    <a href="../8.4 Web Design Agency Project/index.html" target="_blank" class="project-link-btn" title="Open Project">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                        <span>Agency Demo</span>
+                                    </a>
+                                </div>
+                                <a href="https://github.com/rawatayush62" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             Education & Milestones Section
+             ===================================================================== -->
+        <section class="section education" id="education">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">Education & <span>Milestones</span></h2>
+                    <p class="section-subtitle">Academic foundations in Computer Engineering and continuous technical growth.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-period">2026 – 2030 (Expected)</span>
+                                <span class="timeline-location">Patiala, Punjab, India</span>
+                            </div>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech) in Computer Engineering</h3>
+                            <h4 class="timeline-institution">Thapar Institute of Engineering and Technology</h4>
+                            <p class="timeline-desc">
+                                Pursuing rigorous undergraduate studies focusing on computer architecture, software development, data structures, algorithms, and full-stack software systems. Actively developing practical projects and collaborating on emerging tech solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-period">Senior Secondary</span>
+                                <span class="timeline-location">Dehradun, Uttarakhand, India</span>
+                            </div>
+                            <h3 class="timeline-title">Senior Secondary School Education</h3>
+                            <h4 class="timeline-institution">Doon International School</h4>
+                            <p class="timeline-desc">
+                                Completed senior secondary schooling with a solid foundation in Mathematics, Science, and Analytical Problem Solving, sparking an early interest in computing and technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-period">Ongoing & Self-Directed</span>
+                                <span class="timeline-location">Full-Stack Development</span>
+                            </div>
+                            <h3 class="timeline-title">Full-Stack Web & Software Engineering</h3>
+                            <h4 class="timeline-institution">Comprehensive Technical Coursework & Projects</h4>
+                            <p class="timeline-desc">
+                                Actively building practical applications in HTML5, CSS3, modern JavaScript, Node.js, Express, and DOM architecture with a strong emphasis on clean code, responsive layouts, and performance optimization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             Contact & Trust Inquiries Section
+             ===================================================================== -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Initiate a <span>Conversation</span></h2>
+                    <p class="section-subtitle">Interested in collaborating, internship opportunities, or discussing engineering projects? Feel free to reach out directly.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-cards reveal">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Address</h4>
+                                <a href="mailto:ayushrawat6227@gmail.com">ayushrawat6227@gmail.com</a>
+                            </div>
+                            <button class="copy-email-btn" id="copy-email-btn" title="Copy to clipboard">Copy</button>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Dehradun, Uttarakhand, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Professional Network</h4>
+                                <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BTggl0zMNRRGpxxQQS298cw%3D%3D" target="_blank" rel="noopener noreferrer">Ayush Rawat on LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Open Source Code</h4>
+                                <a href="https://github.com/rawatayush62" target="_blank" rel="noopener noreferrer">github.com/rawatayush62</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container reveal">
+                        <h3>Send a Direct Message</h3>
+                        <p>Fill out the form below and I will get back to you promptly.</p>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="e.g. john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Internship / Collaboration / Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                <span>Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================================
+         Footer
+         ========================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-brand">
+                        <div class="brand-logo">AR</div>
+                        <div class="brand-name">Ayush<span>Rawat</span></div>
+                    </a>
+                    <p>Computer Engineering Student at Thapar Institute of Engineering and Technology. Building reliable software and responsive web solutions.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/rawatayush62" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BTggl0zMNRRGpxxQQS298cw%3D%3D" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:ayushrawat6227@gmail.com" class="social-btn" aria-label="Email Ayush">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 Ayush Rawat. All rights reserved.</div>
+                <a href="#hero" class="back-to-top">
+                    <span>Back to top</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast" role="alert" aria-live="assertive">
+        <span class="toast-icon">✓</span>
+        <span id="toast-message">Action successful!</span>
+    </div>
+
+    <!-- Script File -->
+    <script src="./script.js"></script>
+</body>
+</html>
