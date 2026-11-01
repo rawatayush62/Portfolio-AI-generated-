@@ -5,6 +5,48 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Update the public project count from GitHub, excluding this portfolio repository.
+  const githubProjectCount = document.getElementById('github-project-count');
+  const githubProjectLabel = document.getElementById('github-project-label');
+
+  if (githubProjectCount && githubProjectLabel) {
+    async function updateGithubProjectCount() {
+      let page = 1;
+      let projectCount = 0;
+      const perPage = 100;
+
+      while (true) {
+        const response = await fetch(
+          `https://api.github.com/users/rawatayush62/repos?type=owner&per_page=${perPage}&page=${page}`
+        );
+
+        if (!response.ok) {
+          throw new Error(`GitHub API request failed with status ${response.status}`);
+        }
+
+        const repositories = await response.json();
+        if (!Array.isArray(repositories)) {
+          throw new Error('GitHub API returned an unexpected repository list');
+        }
+
+        projectCount += repositories.filter(repository =>
+          !repository.fork &&
+          repository.full_name.toLowerCase() !== 'rawatayush62/portfolio-ai-generated-'
+        ).length;
+
+        if (repositories.length < perPage) break;
+        page += 1;
+      }
+
+      githubProjectCount.textContent = String(projectCount);
+    }
+
+    updateGithubProjectCount().catch(error => {
+      console.error('Unable to load the GitHub project count.', error);
+      githubProjectLabel.textContent = 'GitHub count unavailable';
+    });
+  }
+
   // 1. Mobile Menu Toggle
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -76,8 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterValue = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category.includes(filterValue)) {
+        const category = card.getAttribute('data-category') || '';
+        const categories = category.toLowerCase().split(/\s+/);
+        if (filterValue === 'all' || categories.includes(filterValue)) {
           card.style.display = 'flex';
           setTimeout(() => {
             card.style.opacity = '1';
